@@ -1,0 +1,72 @@
+/* Estilos para animaciones al hacer scroll */
+
+/* Estado inicial de los elementos antes de animar */
+.animate-on-scroll {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+/* Animación de fade-in desde abajo */
+.animate-on-scroll.fade-up {
+    transform: translateY(40px);
+}
+
+/* Animación de fade-in desde la izquierda */
+.animate-on-scroll.fade-right {
+    transform: translateX(-40px);
+}
+
+/* Animación de fade-in desde la derecha */
+.animate-on-scroll.fade-left {
+    transform: translateX(40px);
+}
+
+/* Animación de zoom */
+.animate-on-scroll.zoom-in {
+    transform: scale(0.9);
+}
+
+/* Estado animado (cuando el elemento es visible) */
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* Animación para elementos hijos en cascada */
+.animate-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.animate-item.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Retrasos personalizables */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
+
+/* Duración personalizable */
+.duration-fast { transition-duration: 0.4s; }
+.duration-normal { transition-duration: 0.8s; }
+.duration-slow { transition-duration: 1.2s; }
+
+/* Desactivar animaciones para usuarios que prefieren movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    .animate-on-scroll {
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    
+    .animate-item {
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+} 

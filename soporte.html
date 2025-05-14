@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - InternetExpress</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/soporte.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-wifi"></i> InternetExpress</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="soporte.html" class="active">Soporte</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header animate-on-scroll fade-up">
+            <div class="container">
+                <h2>Centro de Soporte Técnico</h2>
+                <p>Encuentra respuestas a tus preguntas y soluciones a problemas comunes</p>
+            </div>
+        </section>
+
+        <section class="support-options">
+            <div class="container">
+                <div class="options-grid animate-on-scroll animate-children">
+                    <div class="option-card animate-item">
+                        <div class="option-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Soporte Telefónico</h3>
+                        <p>Nuestros técnicos están disponibles 24/7 para ayudarte con cualquier problema</p>
+                        <a href="tel:08001234567" class="option-btn">Llamar ahora</a>
+                        <div class="option-image">
+                            <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=500&h=300" alt="Soporte Telefónico">
+                        </div>
+                    </div>
+                    
+                    <div class="option-card animate-item">
+                        <div class="option-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Chat en Vivo</h3>
+                        <p>Chatea con nuestros agentes en tiempo real para resolver tus dudas</p>
+                        <button class="option-btn" id="chat-btn">Iniciar chat</button>
+                        <div class="option-image">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&h=300" alt="Chat en Vivo">
+                        </div>
+                    </div>
+                    
+                    <div class="option-card animate-item">
+                        <div class="option-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Visita Técnica</h3>
+                        <p>Programa una visita técnica a tu domicilio para resolver problemas complejos</p>
+                        <a href="contacto.html" class="option-btn">Agendar visita</a>
+                        <div class="option-image">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=500&h=300" alt="Visita Técnica">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Preguntas Frecuentes</h3>
+                
+                <div class="faq-container">
+                    <div class="faq-item animate-on-scroll fade-right">
+                        <div class="faq-question">
+                            <h4>¿Qué hago si mi internet está lento?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Si experimentas lentitud en tu conexión, te recomendamos seguir estos pasos:</p>
+                            <ol>
+                                <li>Reinicia tu router (desconéctalo por 30 segundos y vuelve a conectarlo)</li>
+                                <li>Verifica que no haya muchos dispositivos conectados simultáneamente</li>
+                                <li>Realiza una prueba de velocidad en <a href="https://www.speedtest.net/" target="_blank">speedtest.net</a></li>
+                                <li>Conecta tu computadora directamente al router con un cable Ethernet</li>
+                                <li>Si el problema persiste, contacta a nuestro soporte técnico</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll fade-left">
+                        <div class="faq-question">
+                            <h4>¿Cómo cambio la contraseña de mi WiFi?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Para cambiar la contraseña de tu red WiFi, sigue estos pasos:</p>
+                            <ol>
+                                <li>Conecta un dispositivo a tu red WiFi o mediante cable Ethernet</li>
+                                <li>Abre un navegador web e ingresa la dirección IP de tu router (generalmente 192.168.0.1 o 192.168.1.1)</li>
+                                <li>Ingresa el nombre de usuario y contraseña de administrador (si no los has cambiado, consulta la parte inferior de tu router)</li>
+                                <li>Busca la sección "Configuración inalámbrica" o "WiFi"</li>
+                                <li>Cambia la contraseña y guarda los cambios</li>
+                                <li>Reconecta todos tus dispositivos con la nueva contraseña</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll fade-right">
+                        <div class="faq-question">
+                            <h4>¿Qué hacer si no tengo conexión a internet?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Si no tienes conexión a internet, sigue estos pasos para solucionar el problema:</p>
+                            <ol>
+                                <li>Verifica que todos los cables estén correctamente conectados</li>
+                                <li>Comprueba que las luces del router estén encendidas y funcionando normalmente</li>
+                                <li>Reinicia el router (desconéctalo por 30 segundos y vuelve a conectarlo)</li>
+                                <li>Intenta conectar otro dispositivo para descartar problemas con el equipo</li>
+                                <li>Verifica si hay cortes de servicio en tu zona a través de nuestra app móvil</li>
+                                <li>Si el problema persiste, contacta a nuestro soporte técnico</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll fade-left">
+                        <div class="faq-question">
+                            <h4>¿Cómo puedo pagar mi factura?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ofrecemos múltiples opciones para que puedas pagar tu factura:</p>
+                            <ul>
+                                <li>A través de nuestra página web en la sección "Mi Cuenta"</li>
+                                <li>Mediante nuestra aplicación móvil</li>
+                                <li>En bancos y entidades financieras autorizadas</li>
+                                <li>Por transferencia bancaria</li>
+                                <li>En nuestras oficinas comerciales</li>
+                            </ul>
+                            <p>Recuerda que puedes configurar el pago automático para evitar retrasos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-on-scroll fade-right">
+                        <div class="faq-question">
+                            <h4>¿Cómo saber si hay una falla en mi zona?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Para verificar si hay una falla o mantenimiento programado en tu zona:</p>
+                            <ul>
+                                <li>Consulta el estado del servicio en nuestra página principal ingresando tu número de cédula</li>
+                                <li>Revisa las notificaciones en nuestra aplicación móvil</li>
+                                <li>Sigue nuestras redes sociales donde publicamos actualizaciones sobre incidencias</li>
+                                <li>Contacta a nuestro centro de atención telefónica</li>
+                            </ul>
+                            <p>Trabajamos constantemente para resolver las fallas lo más rápido posible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="troubleshooting">
+            <div class="container">
+                <h3 class="animate-on-scroll fade-up">Guías de Solución de Problemas</h3>
+                
+                <div class="guides-grid animate-on-scroll animate-children">
+                    <div class="guide-card animate-item">
+                        <div class="guide-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h4>Problemas de WiFi</h4>
+                        <p>Aprende a optimizar tu señal WiFi y resolver problemas de conexión inalámbrica</p>
+                        <button class="guide-btn" data-guide="wifi">Ver guía</button>
+                        <div class="guide-image">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=500&h=300" alt="Problemas de WiFi">
+                        </div>
+                    </div>
+                    
+                    <div class="guide-card animate-item">
+                        <div class="guide-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Velocidad de Internet</h4>
+                        <p>Consejos para mejorar la velocidad de tu conexión y optimizar tu experiencia</p>
+                        <button class="guide-btn" data-guide="velocidad">Ver guía</button>
+                        <div class="guide-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&h=300" alt="Velocidad de Internet">
+                        </div>
+                    </div>
+                    
+                    <div class="guide-card animate-item">
+                        <div class="guide-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Seguridad en Línea</h4>
+                        <p>Protege tu red y dispositivos con nuestras recomendaciones de seguridad</p>
+                        <button class="guide-btn" data-guide="seguridad">Ver guía</button>
+                        <div class="guide-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=500&h=300" alt="Seguridad en Línea">
+                        </div>
+                    </div>
+                    
+                    <div class="guide-card animate-item">
+                        <div class="guide-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Configuración de Dispositivos</h4>
+                        <p>Guías paso a paso para configurar diferentes dispositivos en tu red</p>
+                        <button class="guide-btn" data-guide="dispositivos">Ver guía</button>
+                        <div class="guide-image">
+                            <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=500&h=300" alt="Configuración de Dispositivos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="guide-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="guide-content"></div>
+            </div>
+        </div>
+
+        <div id="chat-modal" class="modal">
+            <div class="chat-modal-content">
+                <div class="chat-header">
+                    <h4>Chat de Soporte</h4>
+                    <span class="close-chat">&times;</span>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message support">
+                        <div class="message-content">
+                            <p>¡Hola! Bienvenido al soporte técnico de InternetExpress. ¿En qué podemos ayudarte hoy?</p>
+                        </div>
+                        <span class="message-time">Ahora</span>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chat-input-field" placeholder="Escribe tu mensaje...">
+                    <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>InternetExpress</h4>
+                    <p>Conectando hogares con la mejor tecnología</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 0800-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@internetexpress.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 InternetExpress. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/soporte.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 

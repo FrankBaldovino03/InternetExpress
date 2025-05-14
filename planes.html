@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de Internet - InternetExpress</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/planes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-wifi"></i> InternetExpress</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="planes.html" class="active">Planes</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header animate-on-scroll fade-up">
+            <div class="container">
+                <h2>Nuestros Planes de Internet</h2>
+                <p>Encuentra el plan perfecto para tu hogar o negocio</p>
+            </div>
+        </section>
+
+        <section class="planes-filter animate-on-scroll fade-up delay-200">
+            <div class="container">
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="todos">Todos los planes</button>
+                    <button class="filter-btn" data-filter="hogar">Hogar</button>
+                    <button class="filter-btn" data-filter="negocio">Negocio</button>
+                    <button class="filter-btn" data-filter="premium">Premium</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="planes-grid">
+            <div class="container">
+                <div class="planes-container animate-on-scroll animate-children">
+                    <!-- Plan Básico -->
+                    <div class="plan-card animate-item" data-categoria="hogar">
+                        <div class="plan-image">
+                            <img src="img/planes/plan-basico.jpg" alt="Plan Básico">
+                        </div>
+                        <div class="plan-header">
+                            <h3>Plan Básico</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">89.900</span>
+                                <span class="period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>50 Mbps de velocidad</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ideal para 3-5 dispositivos</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Navegación y streaming básico</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte técnico por teléfono</span>
+                            </div>
+                            <div class="plan-feature disabled">
+                                <i class="fas fa-times"></i>
+                                <span>Sin router avanzado</span>
+                            </div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="plan-btn">Contratar ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Plan Estándar -->
+                    <div class="plan-card popular animate-item" data-categoria="hogar">
+                        <div class="plan-tag">Más popular</div>
+                        <div class="plan-image">
+                            <img src="img/planes/plan-estandar.jpg" alt="Plan Estándar">
+                        </div>
+                        <div class="plan-header">
+                            <h3>Plan Estándar</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">129.900</span>
+                                <span class="period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>100 Mbps de velocidad</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ideal para 5-8 dispositivos</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Streaming HD y videojuegos</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte técnico 24/7</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Router WiFi incluido</span>
+                            </div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="plan-btn">Contratar ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Plan Premium -->
+                    <div class="plan-card animate-item" data-categoria="premium">
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=500&h=300" alt="Plan Premium">
+                        </div>
+                        <div class="plan-header">
+                            <h3>Plan Premium</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">189.900</span>
+                                <span class="period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>300 Mbps de velocidad</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ideal para +10 dispositivos</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Streaming 4K y gaming online</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte técnico prioritario</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Router WiFi 6 de alta gama</span>
+                            </div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="plan-btn">Contratar ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Plan Negocio Básico -->
+                    <div class="plan-card animate-item" data-categoria="negocio">
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=500&h=300" alt="Negocio Básico">
+                        </div>
+                        <div class="plan-header">
+                            <h3>Negocio Básico</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">249.900</span>
+                                <span class="period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>150 Mbps simétricos</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>IP fija</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ideal para pequeños negocios</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte técnico especializado</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Router profesional</span>
+                            </div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="plan-btn">Contratar ahora</button>
+                        </div>
+                    </div>
+
+                    <!-- Plan Negocio Pro -->
+                    <div class="plan-card animate-item" data-categoria="negocio premium">
+                        <div class="plan-image">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=500&h=300" alt="Negocio Pro">
+                        </div>
+                        <div class="plan-header">
+                            <h3>Negocio Pro</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">399.900</span>
+                                <span class="period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>500 Mbps simétricos</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Múltiples IPs fijas</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ideal para medianas empresas</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte técnico dedicado</span>
+                            </div>
+                            <div class="plan-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Solución de red completa</span>
+                            </div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="plan-btn">Contratar ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparativa animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Comparativa de Planes</h3>
+                <div class="table-container">
+                    <table class="comparativa-table">
+                        <thead>
+                            <tr>
+                                <th>Características</th>
+                                <th>Plan Básico</th>
+                                <th>Plan Estándar</th>
+                                <th>Plan Premium</th>
+                                <th>Negocio Básico</th>
+                                <th>Negocio Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Velocidad de descarga</td>
+                                <td>50 Mbps</td>
+                                <td>100 Mbps</td>
+                                <td>300 Mbps</td>
+                                <td>150 Mbps</td>
+                                <td>500 Mbps</td>
+                            </tr>
+                            <tr>
+                                <td>Velocidad de subida</td>
+                                <td>10 Mbps</td>
+                                <td>20 Mbps</td>
+                                <td>50 Mbps</td>
+                                <td>150 Mbps</td>
+                                <td>500 Mbps</td>
+                            </tr>
+                            <tr>
+                                <td>Router incluido</td>
+                                <td><i class="fas fa-times text-danger"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <td>IP fija</td>
+                                <td><i class="fas fa-times text-danger"></i></td>
+                                <td><i class="fas fa-times text-danger"></i></td>
+                                <td><i class="fas fa-times text-danger"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Soporte técnico</td>
+                                <td>Telefónico</td>
+                                <td>24/7</td>
+                                <td>Prioritario</td>
+                                <td>Especializado</td>
+                                <td>Dedicado</td>
+                            </tr>
+                            <tr>
+                                <td>Precio mensual</td>
+                                <td>$89.900</td>
+                                <td>$129.900</td>
+                                <td>$189.900</td>
+                                <td>$249.900</td>
+                                <td>$399.900</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section animate-on-scroll fade-up">
+            <div class="container">
+                <div class="cta-content">
+                    <h3>¿Necesitas ayuda para elegir?</h3>
+                    <p>Nuestros asesores pueden recomendarte el plan perfecto según tus necesidades</p>
+                    <a href="contacto.html" class="cta-btn">Contáctanos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>InternetExpress</h4>
+                    <p>Conectando hogares con la mejor tecnología</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 0800-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@internetexpress.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 InternetExpress. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/planes.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 
