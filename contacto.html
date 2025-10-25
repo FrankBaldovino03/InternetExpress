@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - InternetExpress</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-wifi"></i> InternetExpress</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero animate-on-scroll fade-up">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Contáctanos</h2>
+                        <p>Estamos aquí para ayudarte. Contáctanos para cualquier consulta, contratación o soporte técnico</p>
+                        
+                        <div class="hero-features">
+                            <div class="hero-feature">
+                                <i class="fas fa-phone"></i>
+                                <span>0800-123-4567</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@internetexpress.com</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Disponible 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image animate-on-scroll fade-left delay-300">
+                        <img src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?auto=format&fit=crop&w=600&h=400" alt="Contacto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <h3 class="animate-on-scroll fade-up">Envíanos un Mensaje</h3>
+                <p class="section-subtitle animate-on-scroll fade-up">Completa el formulario y nos pondremos en contacto contigo</p>
+                
+                <div class="contact-form-content animate-on-scroll animate-children">
+                    <div class="contact-form-container animate-item">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre completo *</label>
+                                    <input type="text" id="nombre" name="nombre" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono *</label>
+                                    <input type="tel" id="telefono" name="telefono" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="cedula">Número de cédula</label>
+                                    <input type="text" id="cedula" name="cedula" maxlength="10">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="asunto">Asunto *</label>
+                                <select id="asunto" name="asunto" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="contratacion">Contratación de servicio</option>
+                                    <option value="soporte">Soporte técnico</option>
+                                    <option value="facturacion">Consulta de facturación</option>
+                                    <option value="cambio-plan">Cambio de plan</option>
+                                    <option value="instalacion">Solicitud de instalación</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Describe tu consulta o solicitud..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="acepto" name="acepto" required>
+                                    <span class="checkmark"></span>
+                                    Acepto los términos y condiciones y la política de privacidad *
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">
+                                <span class="btn-text">Enviar mensaje</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-message animate-item">
+                        <div class="message-content">
+                            <h4>¡Estamos aquí para ayudarte!</h4>
+                            <p>Nuestro equipo de expertos está listo para resolver todas tus consultas sobre servicios de internet.</p>
+                            
+                            <div class="message-features">
+                                <div class="message-feature">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Respuesta rápida</span>
+                                </div>
+                                <div class="message-feature">
+                                    <i class="fas fa-headset"></i>
+                                    <span>Soporte 24/7</span>
+                                </div>
+                                <div class="message-feature">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Información segura</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="message-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=500&h=300" alt="Equipo de soporte">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Nuestra Ubicación</h3>
+                <p class="section-subtitle">Visítanos en nuestras oficinas principales</p>
+                
+                <div class="map-container animate-on-scroll fade-up">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31539.479435107246!2d-75.41429724179686!3d9.302255000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5907c0872c9265%3A0x3b5f569c3a3fd5d3!2sCentro%20Comercial%20Guacari!5e0!3m2!1ses!2sco!4v1715198356375!5m2!1ses!2sco" width="100%" height="400" style="border:0; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-contact animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Contacto Rápido</h3>
+                <p class="section-subtitle">Accesos directos para situaciones específicas</p>
+                
+                <div class="quick-contact-grid animate-on-scroll animate-children">
+                    <div class="quick-contact-card animate-item">
+                        <div class="quick-contact-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h4>Nuevo Cliente</h4>
+                        <p>¿Quieres contratar nuestro servicio?</p>
+                        <a href="tel:08001234567" class="btn-primary">Llamar ahora</a>
+                    </div>
+                    
+                    <div class="quick-contact-card animate-item">
+                        <div class="quick-contact-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Soporte Técnico</h4>
+                        <p>¿Tienes problemas con tu conexión?</p>
+                        <a href="tel:08001234567" class="btn-secondary">Solicitar soporte</a>
+                    </div>
+                    
+                    <div class="quick-contact-card animate-item">
+                        <div class="quick-contact-icon">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h4>Facturación</h4>
+                        <p>¿Consultas sobre tu factura?</p>
+                        <a href="tel:08001234567" class="btn-secondary">Consultar factura</a>
+                    </div>
+                    
+                    <div class="quick-contact-card animate-item">
+                        <div class="quick-contact-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h4>Instalación</h4>
+                        <p>¿Necesitas programar una instalación?</p>
+                        <a href="tel:08001234567" class="btn-secondary">Programar cita</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner animate-on-scroll fade-up">
+            <div class="container">
+                <div class="cta-content">
+                    <h3>¿Listo para contratar tu servicio?</h3>
+                    <p>Contáctanos ahora y obtén la mejor conexión de internet</p>
+                    <div class="cta-buttons">
+                        <a href="tel:08001234567" class="btn-primary">Llamar ahora</a>
+                        <a href="planes.html" class="btn-outline">Ver planes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-wifi"></i> InternetExpress</h4>
+                    <p>Conectando hogares con la mejor tecnología de fibra óptica. Ofrecemos servicios de internet de alta velocidad con soporte técnico 24/7 en Sincelejo y sus alrededores.</p>
+                    <div class="newsletter">
+                        <h5>¡Mantente informado!</h5>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recibe ofertas exclusivas y noticias sobre nuestros servicios.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Tu correo electrónico">
+                            <button type="submit">Suscribirse</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="planes.html">Planes</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="admin-login.html">Panel Admin</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 0800-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@internetexpress.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Carrera 25 #20-50, Sincelejo</p>
+                    <p><i class="fas fa-clock"></i> Atención 24/7</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <p>Mantente conectado con nosotros en redes sociales</p>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InternetExpress. Todos los derechos reservados. | Diseñado con ❤️ en Colombia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dynamic-effects.js"></script>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoader = submitBtn.querySelector('.btn-loader');
+            
+            // Mostrar loading
+            btnText.style.display = 'none';
+            btnLoader.style.display = 'inline-block';
+            submitBtn.disabled = true;
+            
+            // Simular envío (en una implementación real aquí se enviaría al servidor)
+            setTimeout(() => {
+                // Mostrar mensaje de éxito
+                alert('¡Mensaje enviado correctamente! Nos pondremos en contacto contigo pronto.');
+                
+                // Resetear formulario
+                this.reset();
+                
+                // Restaurar botón
+                btnText.style.display = 'inline-block';
+                btnLoader.style.display = 'none';
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+        
+        // Validación en tiempo real
+        document.getElementById('cedula').addEventListener('input', function(e) {
+            // Solo permitir números
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+        
+        document.getElementById('telefono').addEventListener('input', function(e) {
+            // Solo permitir números, espacios, guiones y paréntesis
+            this.value = this.value.replace(/[^0-9\s\-\(\)]/g, '');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - InternetExpress</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-wifi"></i> InternetExpress</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="soporte.html" class="active">Soporte</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero animate-on-scroll fade-up">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Soporte Técnico 24/7</h2>
+                        <p>Estamos aquí para ayudarte con cualquier problema técnico o consulta sobre tu servicio</p>
+                        
+                        <div class="hero-features">
+                            <div class="hero-feature">
+                                <i class="fas fa-headset"></i>
+                                <span>Soporte 24/7</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-tools"></i>
+                                <span>Asistencia técnica</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Respuesta rápida</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image animate-on-scroll fade-left delay-300">
+                        <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=600&h=400" alt="Soporte técnico">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-options">
+            <div class="container">
+                <h3 class="animate-on-scroll fade-up">Opciones de Soporte</h3>
+                <p class="section-subtitle animate-on-scroll fade-up">Elige la forma más conveniente para recibir ayuda</p>
+                
+                <div class="support-grid animate-on-scroll animate-children">
+                    <div class="support-card animate-item">
+                        <div class="support-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Llamada Telefónica</h4>
+                        <p>Habla directamente con nuestros técnicos especializados</p>
+                        <div class="support-info">
+                            <p><strong>Teléfono:</strong> 0800-123-4567</p>
+                            <p><strong>Horario:</strong> 24/7</p>
+                        </div>
+                        <a href="tel:08001234567" class="btn-primary">Llamar ahora</a>
+                    </div>
+                    
+                    <div class="support-card animate-item">
+                        <div class="support-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Chat en Vivo</h4>
+                        <p>Chatea en tiempo real con nuestro equipo de soporte</p>
+                        <div class="support-info">
+                            <p><strong>Disponible:</strong> 24/7</p>
+                            <p><strong>Tiempo de respuesta:</strong> < 2 minutos</p>
+                        </div>
+                        <button class="btn-secondary" onclick="openChat()">Iniciar chat</button>
+                    </div>
+                    
+                    <div class="support-card animate-item">
+                        <div class="support-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Correo Electrónico</h4>
+                        <p>Envía tu consulta por email y recibe respuesta detallada</p>
+                        <div class="support-info">
+                            <p><strong>Email:</strong> soporte@internetexpress.com</p>
+                            <p><strong>Respuesta:</strong> < 4 horas</p>
+                        </div>
+                        <a href="mailto:soporte@internetexpress.com" class="btn-secondary">Enviar email</a>
+                    </div>
+                    
+                    <div class="support-card animate-item">
+                        <div class="support-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Visita Técnica</h4>
+                        <p>Programa una visita técnica a tu domicilio</p>
+                        <div class="support-info">
+                            <p><strong>Disponible:</strong> Lun - Vie</p>
+                            <p><strong>Horario:</strong> 8:00 AM - 6:00 PM</p>
+                        </div>
+                        <a href="contacto.html" class="btn-secondary">Programar visita</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Preguntas Frecuentes</h3>
+                <p class="section-subtitle">Encuentra respuestas rápidas a las consultas más comunes</p>
+                
+                <div class="faq-container animate-on-scroll animate-children">
+                    <div class="faq-item animate-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>¿Cómo puedo verificar el estado de mi servicio?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Puedes verificar el estado de tu servicio ingresando tu número de cédula en nuestra página principal. También puedes llamar al 0800-123-4567 o contactarnos por chat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>¿Qué hacer si mi internet está lento?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Primero, reinicia tu router desconectándolo por 30 segundos. Si el problema persiste, verifica que no haya otros dispositivos consumiendo ancho de banda. Si continúa, contacta nuestro soporte técnico.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>¿Cómo cambio mi plan de internet?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Para cambiar tu plan, puedes llamar al 0800-123-4567, enviar un email a soporte@internetexpress.com o visitar nuestras oficinas. El cambio se efectúa en el siguiente ciclo de facturación.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>¿Cuánto tiempo toma la instalación?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>La instalación típica toma entre 2-4 horas dependiendo de la complejidad. Programamos citas en horarios convenientes y nuestros técnicos llegan puntualmente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>¿Qué incluye la garantía del servicio?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nuestra garantía incluye mantenimiento del equipo, soporte técnico 24/7, y reemplazo de equipos defectuosos. Ofrecemos SLA del 99.9% de disponibilidad del servicio.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item animate-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>¿Cómo puedo pagar mi factura?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Aceptamos pagos en efectivo, tarjeta de crédito/débito, transferencia bancaria, y pago móvil. También puedes configurar débito automático para mayor comodidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="troubleshooting animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Guía de Solución de Problemas</h3>
+                <p class="section-subtitle">Sigue estos pasos antes de contactar soporte</p>
+                
+                <div class="troubleshooting-grid animate-on-scroll animate-children">
+                    <div class="troubleshooting-card animate-item">
+                        <div class="troubleshooting-icon">
+                            <i class="fas fa-power-off"></i>
+                        </div>
+                        <h4>Reiniciar Equipos</h4>
+                        <ol>
+                            <li>Desconecta el router por 30 segundos</li>
+                            <li>Reconecta y espera 2 minutos</li>
+                            <li>Verifica las luces del router</li>
+                            <li>Prueba la conexión</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="troubleshooting-card animate-item">
+                        <div class="troubleshooting-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h4>Verificar Conexión WiFi</h4>
+                        <ol>
+                            <li>Verifica que el WiFi esté activado</li>
+                            <li>Confirma la contraseña correcta</li>
+                            <li>Acércate al router</li>
+                            <li>Reinicia la conexión WiFi</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="troubleshooting-card animate-item">
+                        <div class="troubleshooting-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h4>Verificar Dispositivos</h4>
+                        <ol>
+                            <li>Reinicia tu dispositivo</li>
+                            <li>Actualiza el navegador</li>
+                            <li>Limpia caché y cookies</li>
+                            <li>Prueba con otro dispositivo</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="troubleshooting-card animate-item">
+                        <div class="troubleshooting-icon">
+                            <i class="fas fa-cable"></i>
+                        </div>
+                        <h4>Verificar Cables</h4>
+                        <ol>
+                            <li>Revisa conexiones del router</li>
+                            <li>Verifica cables de alimentación</li>
+                            <li>Confirma cable Ethernet</li>
+                            <li>Reemplaza cables dañados</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="status-page animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Estado del Servicio</h3>
+                <p class="section-subtitle">Monitorea el estado de nuestra red en tiempo real</p>
+                
+                <div class="status-grid animate-on-scroll animate-children">
+                    <div class="status-card animate-item">
+                        <div class="status-indicator online"></div>
+                        <h4>Red Principal</h4>
+                        <p>Operativa</p>
+                        <span class="status-time">Última actualización: hace 2 min</span>
+                    </div>
+                    
+                    <div class="status-card animate-item">
+                        <div class="status-indicator online"></div>
+                        <h4>Fibra Óptica</h4>
+                        <p>Operativa</p>
+                        <span class="status-time">Última actualización: hace 1 min</span>
+                    </div>
+                    
+                    <div class="status-card animate-item">
+                        <div class="status-indicator online"></div>
+                        <h4>Soporte Técnico</h4>
+                        <p>Disponible</p>
+                        <span class="status-time">Última actualización: hace 30 seg</span>
+                    </div>
+                    
+                    <div class="status-card animate-item">
+                        <div class="status-indicator online"></div>
+                        <h4>Sistema de Facturación</h4>
+                        <p>Operativo</p>
+                        <span class="status-time">Última actualización: hace 5 min</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner animate-on-scroll fade-up">
+            <div class="container">
+                <div class="cta-content">
+                    <h3>¿Necesitas ayuda adicional?</h3>
+                    <p>Nuestro equipo de soporte está disponible 24/7 para asistirte</p>
+                    <div class="cta-buttons">
+                        <a href="tel:08001234567" class="btn-primary">Llamar soporte</a>
+                        <a href="contacto.html" class="btn-outline">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-wifi"></i> InternetExpress</h4>
+                    <p>Conectando hogares con la mejor tecnología de fibra óptica. Ofrecemos servicios de internet de alta velocidad con soporte técnico 24/7 en Sincelejo y sus alrededores.</p>
+                    <div class="newsletter">
+                        <h5>¡Mantente informado!</h5>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recibe ofertas exclusivas y noticias sobre nuestros servicios.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Tu correo electrónico">
+                            <button type="submit">Suscribirse</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="planes.html">Planes</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="admin-login.html">Panel Admin</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 0800-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@internetexpress.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Carrera 25 #20-50, Sincelejo</p>
+                    <p><i class="fas fa-clock"></i> Atención 24/7</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <p>Mantente conectado con nosotros en redes sociales</p>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InternetExpress. Todos los derechos reservados. | Diseñado con ❤️ en Colombia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dynamic-effects.js"></script>
+    
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('i');
+            
+            faqItem.classList.toggle('active');
+            
+            if (faqItem.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.style.maxHeight = '0';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        function openChat() {
+            // Simulación de chat - en una implementación real aquí se integraría con un servicio de chat
+            alert('Chat en vivo disponible próximamente. Por favor contacta por teléfono al 0800-123-4567');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> InternetExpress - La mejor conexión de internet en Sincelejo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-wifi"></i> InternetExpress</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero animate-on-scroll fade-up">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Conexión de Alta Velocidad para Tu Hogar</h2>
+                        <p>La mejor experiencia de internet en Sincelejo con fibra óptica de última generación</p>
+                        
+                        <div class="hero-features">
+                            <div class="hero-feature">
+                                <i class="fas fa-bolt"></i>
+                                <span>Hasta 500 Mbps</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Conexión segura</span>
+                            </div>
+                            <div class="hero-feature">
+                                <i class="fas fa-headset"></i>
+                                <span>Soporte 24/7</span>
+                            </div>
+                        </div>
+                        
+                        <div class="search-title-text">
+                            <h3>¿Eres cliente? Consulta tu servicio</h3>
+                            <p>Ingresa tu número de cédula para verificar el estado de tu servicio</p>
+                        </div>
+                        
+                        <div class="search-box animate-on-scroll fade-up delay-200">
+                            <div class="search-input-container">
+                                <input type="text" id="cedula" placeholder="Ingresa tu número de cédula" maxlength="10">
+                                <button id="consultar" class="dynamic-btn">
+                                    <span class="btn-text">Consultar</span>
+                                    <span class="btn-loader" style="display: none;">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image animate-on-scroll fade-left delay-300">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&h=400" alt="Internet de alta velocidad">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results hidden" id="results">
+            <div class="container">
+                <h3>Información de tu Servicio</h3>
+                <div class="result-card animate-on-scroll fade-up">
+                    <div class="info-group">
+                        <div class="info-item">
+                            <span class="label">Cliente:</span>
+                            <span id="cliente" class="value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Estado del Servicio:</span>
+                            <span id="estado" class="value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Ubicación:</span>
+                            <span id="ubicacion" class="value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Velocidad Contratada:</span>
+                            <span id="velocidad" class="value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Fecha de Facturación:</span>
+                            <span id="facturacion" class="value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Último Pago:</span>
+                            <span id="ultimo-pago" class="value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Estado de Pagos:</span>
+                            <span id="estado-pagos" class="value">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Saldo Pendiente:</span>
+                            <span id="saldo-pendiente" class="value">-</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-section hidden" id="payment-section">
+                        <div class="payment-info">
+                            <h4>Realizar Pago</h4>
+                            <p>Puedes pagar tu servicio de forma segura y rápida</p>
+                        </div>
+                        <div class="payment-buttons">
+                            <button class="btn-primary payment-btn" id="payOnlineBtn">
+                                <i class="fas fa-credit-card"></i>
+                                Pagar en Línea
+                            </button>
+                            <button class="btn-secondary payment-btn" id="payBankBtn">
+                                <i class="fas fa-university"></i>
+                                Transferencia Bancaria
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="clear-section">
+                        <button class="btn-clear" id="clearInfoBtn">
+                            <i class="fas fa-trash-alt"></i>
+                            Limpiar Información
+                        </button>
+                        <p class="clear-info">La información se borrará automáticamente en 1 minuto por seguridad</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3 class="animate-on-scroll fade-up">Nuestros Servicios</h3>
+                <div class="feature-grid animate-on-scroll animate-children">
+                    <div class="feature animate-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Alta Velocidad</h4>
+                        <p>Conexión de fibra óptica de última generación</p>
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=500&h=300" alt="Alta Velocidad">
+                        </div>
+                    </div>
+                    <div class="feature animate-item">
+                        <i class="fas fa-headset"></i>
+                        <h4>Soporte 24/7</h4>
+                        <p>Atención técnica disponible todos los días</p>
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=500&h=300" alt="Soporte 24/7">
+                        </div>
+                    </div>
+                    <div class="feature animate-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Amplia Cobertura</h4>
+                        <p>Llegamos a más lugares cada día</p>
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?auto=format&fit=crop&w=500&h=300" alt="Amplia Cobertura">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coverage-section animate-on-scroll fade-up">
+            <div class="container">
+                <div class="coverage-content">
+                    <div class="coverage-info">
+                        <h3>Cobertura en Sincelejo</h3>
+                        <p>Estamos expandiendo nuestra red de fibra óptica para llegar a más hogares y negocios en Sincelejo y sus alrededores.</p>
+                        
+                        <div class="coverage-stats">
+                            <div class="stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-city"></i>
+                                </div>
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Cobertura urbana</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-tree"></i>
+                                </div>
+                                <span class="stat-number">75%</span>
+                                <span class="stat-label">Cobertura rural</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Disponibilidad</span>
+                                <div class="stat-progress">
+                                    <div class="progress-bar" data-width="99.9"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contacto.html" class="btn-primary">Consultar disponibilidad</a>
+                    </div>
+                    <div class="coverage-map animate-on-scroll fade-left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31539.479435107246!2d-75.41429724179686!3d9.302255000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5907c0872c9265%3A0x3b5f569c3a3fd5d3!2sCentro%20Comercial%20Guacari!5e0!3m2!1ses!2sco!4v1715198356375!5m2!1ses!2sco" width="100%" height="400" style="border:0; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plans-preview animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Planes Destacados</h3>
+                <p class="section-subtitle">Elige el plan perfecto para tu hogar o negocio</p>
+                
+                <div class="plans-preview-grid animate-on-scroll animate-children">
+                    <div class="plan-preview-card animate-item">
+                        <div class="plan-preview-header">
+                            <h4>Plan Básico</h4>
+                            <div class="plan-preview-price">
+                                <span class="price-amount">$89.900</span>
+                                <span class="price-period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-preview-features">
+                            <div class="plan-preview-feature">
+                                <i class="fas fa-check"></i>
+                                <span>50 Mbps</span>
+                            </div>
+                            <div class="plan-preview-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ideal para 3-5 dispositivos</span>
+                            </div>
+                        </div>
+                        <a href="planes.html" class="btn-secondary">Ver detalles</a>
+                    </div>
+                    
+                    <div class="plan-preview-card popular animate-item">
+                        <div class="plan-tag">Más popular</div>
+                        <div class="plan-preview-header">
+                            <h4>Plan Estándar</h4>
+                            <div class="plan-preview-price">
+                                <span class="price-amount">$129.900</span>
+                                <span class="price-period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-preview-features">
+                            <div class="plan-preview-feature">
+                                <i class="fas fa-check"></i>
+                                <span>100 Mbps</span>
+                            </div>
+                            <div class="plan-preview-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ideal para 5-8 dispositivos</span>
+                            </div>
+                        </div>
+                        <a href="planes.html" class="btn-primary">Ver detalles</a>
+                    </div>
+                    
+                    <div class="plan-preview-card animate-item">
+                        <div class="plan-preview-header">
+                            <h4>Plan Premium</h4>
+                            <div class="plan-preview-price">
+                                <span class="price-amount">$189.900</span>
+                                <span class="price-period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-preview-features">
+                            <div class="plan-preview-feature">
+                                <i class="fas fa-check"></i>
+                                <span>300 Mbps</span>
+                            </div>
+                            <div class="plan-preview-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ideal para +10 dispositivos</span>
+                            </div>
+                        </div>
+                        <a href="planes.html" class="btn-secondary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials animate-on-scroll fade-up">
+            <div class="container">
+                <h3>Lo que dicen nuestros clientes</h3>
+                <p class="section-subtitle">Miles de usuarios confían en nuestro servicio</p>
+                
+                <div class="testimonials-grid animate-on-scroll animate-children">
+                    <div class="testimonial-card animate-item">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"El mejor servicio de internet que he tenido. La velocidad es constante y el soporte técnico siempre está disponible cuando lo necesito."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="María Gómez">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>María Gómez</h4>
+                                <p>Cliente desde 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card animate-item">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Excelente relación calidad-precio. Desde que contraté InternetExpress, no he vuelto a tener problemas con videollamadas o streaming."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Martínez">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Carlos Martínez</h4>
+                                <p>Cliente desde 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card animate-item">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"La instalación fue rápida y profesional. El técnico me explicó todo el proceso y me dio consejos para optimizar mi conexión. Muy satisfecho."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Rodríguez">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Ana Rodríguez</h4>
+                                <p>Cliente desde 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner animate-on-scroll fade-up">
+            <div class="container">
+                <div class="cta-content">
+                    <h3>¿Listo para disfrutar de la mejor conexión?</h3>
+                    <p>Contrata ahora y obtén instalación gratuita</p>
+                    <div class="cta-buttons">
+                        <a href="planes.html" class="btn-primary">Ver planes</a>
+                        <a href="contacto.html" class="btn-outline">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-wifi"></i> InternetExpress</h4>
+                    <p>Conectando hogares con la mejor tecnología de fibra óptica. Ofrecemos servicios de internet de alta velocidad con soporte técnico 24/7 en Sincelejo y sus alrededores.</p>
+                    <div class="newsletter">
+                        <h5>¡Mantente informado!</h5>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;">Recibe ofertas exclusivas y noticias sobre nuestros servicios.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Tu correo electrónico">
+                            <button type="submit">Suscribirse</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="planes.html">Planes</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="admin-login.html">Panel Admin</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> 0800-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@internetexpress.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Carrera 25 #20-50, Sincelejo</p>
+                    <p><i class="fas fa-clock"></i> Atención 24/7</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <p>Mantente conectado con nosotros en redes sociales</p>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InternetExpress. Todos los derechos reservados. | Diseñado con ❤️ en Colombia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dynamic-effects.js"></script>
+</body>
+
+</html> 
